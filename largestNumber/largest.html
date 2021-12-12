@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style src ="s1.css"></style>
+        <!--<script type="js/text" src = "scr1.js">*/
+        </script>-->
+    </head>
+    <body>
+        
+        <label for="fn">1st number:</label>
+        <input type="number" id="fno" name="fn"><br><br>
+        <label for="2ndn">2nd number:</label>
+        <input type="number" id="2ndno" name="2ndn"><br><br>
+        <button onclick="largestno()">Submit</button><br> <br>   
+        
+        <p id="larges"></p>
+        <script>
+            
+            function largestno(){
+            var f = document.getElementById("fno").value;
+            var s = document.getElementById("2ndno").value;
+            var f = parseInt(f);
+            var s = parseInt(s);
+            text = "Largest number is " ;
+            var largest = (f>s)?f:s;
+            document.getElementById("larges").innerHTML=text+largest;
+
+            }           
+        </script>
+    </body>
+</html>
